@@ -408,9 +408,14 @@ margin-bottom: 50px;
   cursor: pointer;
 }
 
-.our-class-cointainer:hover .client-icon:hover,
-.our-class-cointainer:focus .client-icon:focus {
-border-color: var(--brand-accent-color);
+.our-class-cointainer:hover .clinet-icon
+.our-class-cointainer:focus .client-icon {
+fill: var(--brand-accent-color);
+}
+
+.our-class-cointainer:hover,
+.our-class-cointainer:focus {
+border: 1px solid var(--brand-accent-color);
 }
 
 .footer {
