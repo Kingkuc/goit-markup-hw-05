@@ -55,7 +55,10 @@
       <section class="section section-hero">
         <div class="cointainer">
           <h1 class="section-hero-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="section-hero-button" type="button">Zamów usługe</button>
+          <button data-modal-open class="section-hero-button" type="button">Zamów usługe</button>
+          <div class="modal is-hidden" data-modal>
+            <button data-modal-close>X</button>
+        </div>
         </div>
       </section>
       
@@ -424,5 +427,6 @@
             </div>
         </div>
       </footer>
+      <script src="./js/modal.js"></script>
     </body>
 </html>
