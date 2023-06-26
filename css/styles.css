@@ -192,6 +192,11 @@ gap: 30px;
   margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.20);
+  transform: scale(1);
+  opacity: 1;
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .modal {
@@ -205,16 +210,6 @@ gap: 30px;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  animation: animatemodal 2s linear;
-}
-
-@keyframes animatemodal {
-  0% {
-    transform: translate (100%, 100%);
-  }
-  100% {
-    transform: translate (0, 0);
-  }
 }
 
 .close-modal-button {
@@ -238,10 +233,8 @@ gap: 30px;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transform: translate(50%);
+  transform: translate(0);
 }
-
-
 
 .text-list-1-points {
   list-style: none;
