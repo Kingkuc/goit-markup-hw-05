@@ -56,9 +56,15 @@
         <div class="cointainer">
           <h1 class="section-hero-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
           <button data-modal-open class="section-hero-button" type="button">Zamów usługe</button>
-          <div class="modal is-hidden" data-modal>
-            <button data-modal-close>X</button>
-        </div>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="close-modal-button" data-modal-close>
+                <svg width="18" height="18">
+                  <use href="/images/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
       
